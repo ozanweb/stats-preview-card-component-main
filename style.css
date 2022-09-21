@@ -141,6 +141,7 @@ ul.stats h4 {
   }
 
   .header {
+    background-image: url(images/image-header-desktop.jpg);
     position: absolute;
     background-size: cover;
     right: 0;
