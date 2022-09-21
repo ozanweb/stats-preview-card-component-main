@@ -60,6 +60,7 @@ body {
 }
 
 .placeholder-img-m {
+  display: block;
   visibility: hidden;
 }
 
