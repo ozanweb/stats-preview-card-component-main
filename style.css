@@ -61,8 +61,12 @@ body {
   width: 100%;
 }
 
-.placeholder-img {
+.placeholder-img-m {
   visibility: hidden;
+}
+
+.placeholder-img-d {
+  display: none;
 }
 
 .main {
@@ -150,6 +154,15 @@ ul.stats h4 {
     float: right;
     width: 50%;
     border-radius: 0 .5rem .5rem 0;
+  }
+
+  .placeholder-img-m {
+    display: none;
+  }
+  
+  .placeholder-img-d {
+    display: block;
+    visibility: hidden;
   }
 
   h1 {
