@@ -1,0 +1,189 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+/*CSS Resets*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+/*User Styles*/
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  min-width: 320px;
+  height: 100vh;
+  
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 375px;
+  background-color: hsl(244, 38%, 16%);
+  margin: 0 1rem;
+  border-radius: .5rem;
+}
+
+.header {
+  background-image: url(/images/image-header-mobile.jpg);
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-radius: .5rem .5rem 0 0;
+  width: 100%;
+}
+
+.placeholder-img {
+  visibility: hidden;
+}
+
+.main {
+  text-align: center;
+}
+
+h1 {
+  padding: 1.5rem;
+  line-height: 1.25;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: .75rem;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  padding: 0 1.5rem 1.25rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.footer {
+  flex: 1 1 40%;
+}
+
+ul.stats {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+ul.stats li {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: .9rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+ul.stats h4 {
+  font-family: 'Inter', sans-serif;
+  color: hsl(0, 0%, 100%);
+  padding-top: .25rem;
+  font-size: 1.4rem;
+
+}
+
+@media screen and (max-width: 321px) {
+  :root {
+    font-size: calc(15px - .15em);
+  }
+
+  .container {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    margin: 0 auto;
+    left: 0; right: 0;
+  }
+}
+
+
+@media screen and (min-width: 819px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .header {
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    float: right;
+    width: 50%;
+    border-radius: 0 .5rem .5rem 0;
+  }
+
+  h1 {
+    padding: 3rem 3rem 1.5rem;
+    padding-bottom: 0;
+  }
+
+  p {
+    padding: 1.5rem 3rem;
+  
+  }
+
+  .main {
+    text-align: left;
+    float: left;
+    width: 50%;
+  }
+
+  .footer {
+    float: left;
+    clear: left;
+    width: 50%;
+  }
+
+  ul.stats { 
+    flex-direction: row;
+    text-align: left;
+
+    /* border: 1px solid yellow; */
+    padding: 1.5rem 3rem 3rem;
+  }
+
+  ul.stats li {
+    padding-bottom: 0;
+    text-align: left;
+    padding-right: 1.5rem;
+  }
+}
